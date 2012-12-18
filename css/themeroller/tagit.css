@@ -1,5 +1,6 @@
 ul.tagit.ui-widget{
 	overflow: auto;
+    line-height: 1.2em;
 	list-style-type: none;
 	padding: 1px 5px;
 }
@@ -10,7 +11,7 @@ ul.tagit.ui-widget li.tagit-choice{
 	margin: 2px 5px 2px 0;
 	position: relative;
 	line-height: inherit;
-	padding: .2em 11px .2em .5em;
+	padding: .2em 15px .2em .5em;
 }
 
 ul.tagit.ui-widget li.tagit-new{
@@ -27,11 +28,10 @@ ul.tagit.ui-widget li.tagit-choice.ui-state-error {
 }
 
 ul.tagit.ui-widget li.tagit-choice a.tagit-close{
-	cursor: pointer;
-	position: absolute;
-	right: 2px;
-	top: 50%;
-	margin-top: -8px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 ul.tagit div.tagit-label.hidden {
@@ -84,5 +84,4 @@ ul.ui-autocomplete li.ui-menu-item.ac-item div.ui-widget-content{
 	height: 80px;
 	overflow: auto;
 	padding: 3px;
-
 }

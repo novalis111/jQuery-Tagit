@@ -457,10 +457,10 @@
             }
 
             var tag = this.tag(label, value);
-            tag.element = $('<li class="tagit-choice ui-widget-content ui-state-default"'
+            tag.element = $('<li class="tagit-choice ui-widget-content ui-state-default ui-corner-all"'
                 + (value !== undefined ? ' tagValue="' + value + '"' : '') + '>'
                 + (this.options.sortable == 'handle' ? '<a class="ui-icon ui-icon-grip-dotted-vertical" style="float:left"></a>' : '')
-                + '<div class="tagit-label">' + label + '</div>' + '<a class="tagit-close ui-state-error-text">x</a></li>');
+                + '<span class="tagit-label">' + label + '</span>' + '<a class="tagit-close ui-icon ui-icon-close"></a></li>');
             tag.element.insertBefore(this.input.parent());
             this.tagsArray.push(tag);
 
